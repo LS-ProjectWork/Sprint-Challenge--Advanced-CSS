@@ -249,10 +249,14 @@ footer {
 }
 .home .walk .walk-text .btn {
   background: #22283A;
-  color: #5E6164;
+  color: white;
   border-radius: 5px;
-  width: 50rem;
-  font-size: 1.3rem;
+  width: 9rem;
+  height: 4rem;
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .home .walk .walk-img {
   width: 46%;
