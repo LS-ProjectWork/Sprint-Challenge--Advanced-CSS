@@ -5,9 +5,10 @@
     align-items: center;
 }
 
-.custom-button(@bg, @f) {
-    background: @bg;
-    color: @f;
+.custom-button(@w, @fs) {
+    background: @btn-bg-color;
+    color: @main-font-color;
     border-radius: 5px;
-    width: 2rem;
+    width: @w;
+    font-size: @fs;
 }
