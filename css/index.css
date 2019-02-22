@@ -171,7 +171,6 @@ p {
   background: #F6F6F6;
 }
 .nav-bar nav {
-  border: 1px solid black;
   display: flex;
   width: 45%;
   margin-top: 1rem;
