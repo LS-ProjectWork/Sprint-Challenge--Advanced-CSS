@@ -25,6 +25,16 @@
     flex-wrap: wrap;
     width: 100%;
 
+    @media @phone {
+      .sky, .launch {
+        display: none;
+      }
+
+      .blast {
+        width: 95%;
+      }
+    }
+
     img {
       width: 28%;
       margin: 20px 2.5%;
@@ -51,9 +61,23 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
+    // border: 1px solid black; 
+
+    @media @phone {
+      .mobile-view();
+      width: 95%;
+      padding: 15px;
+      margin: 0;
+    }
 
     .walk-text {
       width: 50%;
+
+      @media @phone {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -65,17 +89,41 @@
 
       .btn {
         .custom-button(9rem, 4rem, 1.6rem);
+
+        &:hover {
+          background: white;
+          color: @btn-bg-color;
+        }
+
+        @media @phone {
+          .custom-button(100%, 6rem, 1.6rem);
+          margin-bottom: 1rem;
+        }
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+
+      @media @phone {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 20px 0;
+        align-items: center;
+      }
       
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
+
+        @media @phone {
+          width: 95%;
+          height: 100%;
+
+        }
       }
     }
   }
