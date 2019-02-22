@@ -162,6 +162,7 @@ p {
 }
 .main-navigation {
   width: 100%;
+  margin: 0;
   background: #F6F6F6;
   border-bottom: 1px solid #F1F1F1;
 }
@@ -197,8 +198,12 @@ footer {
   justify-content: center;
   align-items: center;
 }
+.home {
+  max-width: 1070px;
+}
 .home .intro img {
   width: 100%;
+  border-radius: 10px;
 }
 .home .intro h2 {
   padding: 15px;
